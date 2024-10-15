@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO</title>
+    <link rel="stylesheet" href="../css/formulafio.css">
+
+</head>
+
+<body>
+    <div class="home">
+        
+        <header>
+            <div id="sidebar" class="sidebar">
+                <button class="closebtn" onclick="closeNav()">X</button>
+                <a href="#">Perfil</a>
+                <a href="#">Cadastrar</a>
+                <a href="#">Sobre</a>
+                <a href="#">Imóveis</a>
+            </div>
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+            </div>
+        </header>
+        <div class="formulario">
+            <div class="avaliacao">
+                <div class="fotoPerfil">
+                    <div class="profile-pic-container">
+                        <label for="profilePic" class="custom-file-upload">
+                            <img id="profileImage" src="default-avatar.png" alt="Foto de Perfil" class="profile-img">
+                            <i class="fa fa-camera icon-camera"></i> <!-- ícone de câmera -->
+                        </label>
+                        <input type="file" id="profilePic" accept="image/*" style="display: none;" onchange="loadProfilePic(event)">
+                    </div>
+                </div>
+                <div class="dadosAvaliacao">
+                    <div class="bomVizinho">BOM VIZINHO
+                        <div class="stars">
+                            <span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="nivelBarulho">NÍVEL BARULHO
+                        <div class="stars">
+                            <span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="bomPagador">BOM PAGADOR
+                        <div class="stars">
+                            <span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="cuidadoPatrimonio">CUIDADO COM PATRIMÔNIO
+                        <div class="stars">
+                            <span>★★★★★</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="dividirLados">
+
+                <div class="esquerdo">
+                    <div class="formularioEsquerdo">
+                        <form id="formEsquerdo" action="">
+                            <input type="text" name="nome-completpo" placeholder="Nome Completo" value="" size="50" required />
+                             <input type="email" name="email" placeholder="E-mail" size="50" required />
+                             <input type="text" name="celular" placeholder="Celular" value="" size="50" required />
+                             <input type="text" name="cpf" placeholder="CPF" value="" size="50" required />
+                             <input type="date" name="data-nascimento" placeholder="Data Nascimento" value="" size="10" required />
+                             <input type="text" name="enderecoAnterior" placeholder="Endereço Anterior:" value="" size="50" required />
+                            </form>
+                    </div>
+                </div>
+                <div class="direito">
+                    <div class="formularioDireito">
+                        <form id="formDireito" action="">
+                            <label for="estadoCivil"></label>
+                            <select id="estadoCivil">
+                                <option value="">Estado Civil:</option>
+                                <option value="solteiro">Solteiro(a)</option>
+                                <option value="casado">Casado(a)</option>
+                            </select>
+        
+                            <div class="casado-info" id="casadoInfo">
+                                <label for="nomeConjuge"></label>
+                                <input type="text" id="nomeConjuge" name="nomeConjuge" placeholder="Nome do Cônjuge:" required>
+                                <br>
+                                <label for="cpfConjuge"></label>
+                                <input type="text" id="cpfConjuge" name="cpfConjuge" placeholder="CPF do Cônjuge:" required>
+                            </div>
+                            
+                            <label for="numFilhos"></label>
+                            <input type="number" id="numFilhos" name="numFilhos" min="0" placeholder="Número de Filhos:" required>
+                            <div id="filhosInfo"></div>
+        
+
+                        </form>
+                </div>
+            </div>
+        </div>
+        <div class="botaoEnviar">
+            <button class="btn"><span>Enviar</span></button>
+        </div>
+    </div>
+
+
+    <script src="../js/formulario.js"></script>
+</body>
+
+</html>
+
+
+
+
+<!--            
+
+
+             <form id="formEsquerdo" action="">
+                   <input type="text" name="nome-completpo" placeholder="Nome Completo" value="" size="50" required />
+                    <input type="email" name="email" placeholder="E-mail" size="50" required />
+                    <input type="text" name="celular" placeholder="Celular" value="" size="50" required />
+                    <input type="text" name="cpf" placeholder="CPF" value="" size="50" required />
+                    <input type="date" name="data-nascimento" placeholder="Data Nascimento" value="" size="10" required />
+                </form>
+
+
+
+
+
+
+                <form id="formDireito" action="">
+                    <label for="estadoCivil">Estado Civil:</label>
+                    <select id="estadoCivil">
+                        <option value="">Selecione</option>
+                        <option value="solteiro">Solteiro(a)</option>
+                        <option value="casado">Casado(a)</option>
+                    </select>
+
+                    <div class="casado-info" id="casadoInfo">
+                        <label for="nomeConjuge">Nome do Cônjuge:</label>
+                        <input type="text" id="nomeConjuge" name="nomeConjuge" required>
+                        <br>
+                        <label for="cpfConjuge">CPF do Cônjuge:</label>
+                        <input type="text" id="cpfConjuge" name="cpfConjuge" required>
+                    </div>
+                    <select>
+                        <option value="">Filhos</option>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+
+                    <label for="numFilhos">Número de filhos:</label>
+                    <input type="number" id="numFilhos" name="numFilhos" min="0" required>
+                    <div id="filhosInfo"></div>
+                </form>
+                
+                
+                <button>Enviar</button>-->

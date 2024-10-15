@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    height: 200px; /* Ajuste a altura conforme necessário */
+    width: 400px;  /* Ajuste a largura conforme necessário */
+}
+
+.black {
+    width: 50px; /* Define a largura da faixa preta */
+    background-color: rgb(39, 131, 77);
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Ocupar o espaço restante */
+}
+
+.red {
+    background-color: #8B0000; /* Cor vermelha */
+    height: 50px; /* Define a altura da faixa vermelha */
+}
+
+.blue {
+    background-color: #3333FF; /* Cor azul */
+    flex-grow: 1; /* Ocupar o espaço restante */
+}

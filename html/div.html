@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cabecalho {
+            width: 100%;
+            height: 50px;
+            background-color: blue;
+        }
+
+        .formulario {
+            width: 100%;
+            height: 250px;
+            background-color: rgb(30, 255, 0);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .dividirLados {
+            width: 100%;
+            height: 90%px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            color: darkgoldenrod;
+            z-index: 3;
+        }
+
+        .esquerdo {
+            width: 30%;
+            background-color: rgb(211, 15, 15);
+
+        }
+
+        .formEsquerdo {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .direito {
+            width: 30%;
+            background-color: aquamarine;
+        }
+
+        button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .avaliacao {
+            width: 100%;
+            height: 100px;
+            background-color: green;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .fotoPerfil {
+            background-color: khaki;
+            width: 20%;
+
+        }
+
+        .fotoPerfil img {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 10px;
+        }
+
+        .dadosAvaliacao {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: antiquewhite;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cabecalho"></div>
+    <div class="formulario">
+        <div class="avaliacao">
+            <div class="fotoPerfil">
+                <img src="../images/CT.jpeg" alt="">
+            </div>
+            <div class="dadosAvaliacao">
+                <div class="bomVizinho estrela">BOM VIZINHO</div>
+                <div class="nivelBarulho estrela">NÍVEL BARULHO</div>
+                <div class="bomPagador estrela">BOM PAGADOR</div>
+                <div class="cuidadoPatrimonio estrela">CUIDADO COM PATRIMÔNIO</div>
+            </div>
+        </div>
+        <div class="dividirLados">
+            <div class="esquerdo">ESQUERDO
+                <form action="">
+                    <div class="formEsquerdo">
+
+
+                    </div>
+                </form>
+            </div>
+            <div class="direito">DIREITO
+                <form action="">
+
+                </form>
+            </div>
+
+        </div>
+        <button>Enviar</button>
+    </div>
+</body>
+
+</html>
